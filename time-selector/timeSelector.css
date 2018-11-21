@@ -1,0 +1,80 @@
+/**************************自定义********************************/
+html {
+    font-size: 20px;
+}
+@media only screen and (min-width: 400px) {
+    html {
+        font-size: 21.33333333px !important;
+    }
+}
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 22.08px !important;
+    }
+}
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 25.6px !important;
+    }
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+.time-selector{
+    font-size:.65rem;
+}
+.time-selector .selector-title{
+    height: 2rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.time-selector .selector-title span{
+    width:.65rem;
+    height:.65rem;
+    background-color:#d9d8d8;
+    display: inline-flex;
+    margin:0 .2rem;
+}
+.selector-content{
+    overflow:hidden;
+}
+.selector-left{
+    width: 17%;
+    float: left;
+    text-align: center;
+}
+.selector-left .hour{
+    height:2rem;
+    text-align: center;
+    margin-bottom:.3rem;
+}
+.selector-right{
+    width: 75%;
+    float: left;
+}
+.selector-right ul{
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.selector-right ul li{
+    list-style:none;
+    width:22%;
+    margin-right:.3rem;
+    margin-bottom:.3rem;
+    height:2rem;
+    float:left;
+    background-color: #d9d8d8;
+    color:#fff;
+    text-align: center;
+}
+.booked{
+    background-color: #acd9f0!important;
+}
+.selected{
+    background-color: #51aee1!important;
+}

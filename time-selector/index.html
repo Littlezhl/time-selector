@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="timeSelector.css">
+    <title>会议室预订</title>
+</head>
+<body>
+    <div class="time-selector">
+        <div class="selector-title">请选择预定时间(<span></span>可选)</div>
+        <div class="selector-content"></div>
+    </div>
+	<div class="result" style="margin-left: 7%;"></div>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="selector.js"></script>
+<script type="text/javascript">
+    $.fn.timeSelector({
+	    domClassName:".selector-content",
+		startTime:8,
+        endTime:20,
+		selectedSection:[
+		    {"meetDate":"2018-11-21","startTime":"08:00","endTime":"09:15"},
+		    {"meetDate":"2018-11-21","startTime":"12:15","endTime":"15:00"}
+		],
+		callback:function(stime,etime){
+		    $(".result").html("选择结果："+stime+"--"+etime);
+		    console.log(stime+"--"+etime);
+		}
+	});
+</script>
+</body>
+</html>
